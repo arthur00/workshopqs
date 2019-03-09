@@ -16,6 +16,7 @@ class MyHandler(BaseHTTPRequestHandler):
 
 try:
   server = HTTPServer(('', PORT_NUMBER), MyHandler)
+  print("HEllo World")
   print('Started httpserver on port', PORT_NUMBER)
   server.serve_forever()
 
